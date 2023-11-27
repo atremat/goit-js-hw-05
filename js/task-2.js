@@ -1,25 +1,3 @@
-/*
-Напиши стрілочну функцію getUsersWithFriend(users, friendName) , яка прийматиме два параметра:
-
-перший параметр users — масив об’єктів користувачів
-другий параметр friendName — ім’я друга для пошуку.
-Функція має повертати масив усіх користувачів із масиву users, у яких є друг з іменем friendName.
-Друзі кожного користувача зберігаються у властивості friends. Якщо користувачів, у яких є такий других немає, то функція має повернути порожній масив.
-
-Поради:
-
-Метод filter() можна використовувати для створення нового масиву з елементами, які задовольняють певну умову.
-Використовуй метод includes() для перевірки, чи масив friends містить friendName.
-*/
-// розгорнута форма:
-// const getUsersWithFriend = (users, friendName) => {
-//     const filteredUsers = users.filter(({ friends }) =>
-//         friends.includes(friendName),
-//     );
-//     return filteredUsers;
-// };
-
-// коротка форма функції:
 const getUsersWithFriend = (users, friendName) =>
     users.filter(({ friends }) => friends.includes(friendName));
 
